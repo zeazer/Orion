@@ -9,7 +9,7 @@
 #include "OrionViewControllerWidget.generated.h"
 
 UENUM(BlueprintType)
-enum class EViewDataMode
+enum class EViewDataMode : uint8
 {
 	ViewData,
 	DataTable

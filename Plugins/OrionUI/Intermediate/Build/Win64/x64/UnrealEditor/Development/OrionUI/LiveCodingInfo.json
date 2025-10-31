@@ -30,6 +30,7 @@
 			"PoolAsyncAction.gen.cpp.obj",
 			"PoolAsyncActionLoop.gen.cpp.obj",
 			"ViewData.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"OrionBlueprintFunctionLibrary.cpp.obj",
 			"OrionSettings.cpp.obj",
 			"OrionUI.cpp.obj",

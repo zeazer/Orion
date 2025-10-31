@@ -6,7 +6,7 @@
 
 
 UENUM(BlueprintType)
-enum class EOrionAnimMode
+enum class EOrionAnimMode : uint8
 {
 	InAnim,
 	OutAnim

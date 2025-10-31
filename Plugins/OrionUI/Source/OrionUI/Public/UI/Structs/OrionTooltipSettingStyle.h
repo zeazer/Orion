@@ -3,7 +3,7 @@
 #include "OrionTooltipSettingStyle.generated.h"
 
 UENUM(BlueprintType)
-enum class EToolTipMode
+enum class EToolTipMode : uint8
 {
 	Hover,
 	LeftClick,

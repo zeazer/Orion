@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-OrionUI.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Games\Orion-5.3\Intermediate\Build\Win64\x64\OrionEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp17.InclOrderUnreal5_1.h.obj"
-"C:\Games\Orion-5.3\Plugins\OrionUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\OrionUI\Module.OrionUI.cpp.obj"
-"C:\Games\Orion-5.3\Plugins\OrionUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\OrionUI\Default.rc2.res"
-/OUT:"C:\Games\Orion-5.3\Plugins\OrionUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\OrionUI\UnrealEditor-OrionUI.lib"
+"C:/Games/Orion/Intermediate/Build/Win64/x64/OrionEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/Module.OrionUI.cpp.obj"
+"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/Default.rc2.res"
+/OUT:"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/UnrealEditor-OrionUI.lib"

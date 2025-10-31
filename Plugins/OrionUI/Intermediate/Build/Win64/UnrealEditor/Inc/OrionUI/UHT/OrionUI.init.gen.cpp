@@ -11,29 +11,29 @@ void EmptyLinkFunctionForGeneratedCodeOrionUI_init() {}
 	ORIONUI_API UFunction* Z_Construct_UDelegateFunction_OrionUI_OnUserWidgetCreated__DelegateSignature();
 	ORIONUI_API UFunction* Z_Construct_UDelegateFunction_OrionUI_PoolLoopOutputPin__DelegateSignature();
 	ORIONUI_API UFunction* Z_Construct_UDelegateFunction_OrionUI_PoolOutputPin__DelegateSignature();
-	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OrionUI;
-	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_OrionUI()
+static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OrionUI;
+FORCENOINLINE UPackage* Z_Construct_UPackage__Script_OrionUI()
+{
+	if (!Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton)
 	{
-		if (!Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton)
-		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_OnUserWidgetCreated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_PoolLoopOutputPin__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_PoolOutputPin__DelegateSignature,
-			};
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/OrionUI",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
-				PKG_CompiledIn | 0x00000000,
-				0x89EED911,
-				0x29C1C235,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton;
+		static UObject* (*const SingletonFuncArray[])() = {
+			(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_OnUserWidgetCreated__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_PoolLoopOutputPin__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OrionUI_PoolOutputPin__DelegateSignature,
+		};
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/OrionUI",
+			SingletonFuncArray,
+			UE_ARRAY_COUNT(SingletonFuncArray),
+			PKG_CompiledIn | 0x00000000,
+			0x08CEC742,
+			0xD78109EB,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OrionUI(Z_Construct_UPackage__Script_OrionUI, TEXT("/Script/OrionUI"), Z_Registration_Info_UPackage__Script_OrionUI, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x89EED911, 0x29C1C235));
+	return Z_Registration_Info_UPackage__Script_OrionUI.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OrionUI(Z_Construct_UPackage__Script_OrionUI, TEXT("/Script/OrionUI"), Z_Registration_Info_UPackage__Script_OrionUI, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x08CEC742, 0xD78109EB));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
