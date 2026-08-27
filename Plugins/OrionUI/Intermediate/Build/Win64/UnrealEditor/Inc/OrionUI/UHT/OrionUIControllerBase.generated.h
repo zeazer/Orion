@@ -12,6 +12,7 @@
 #define ORIONUI_OrionUIControllerBase_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -19,26 +20,24 @@ class UObject;
 class UWidget;
 
 // ********** Begin Class UOrionUIControllerBase ***************************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetActiveView);
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_CALLBACK_WRAPPERS
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_UOrionUIControllerBase_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionUIControllerBase_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionUIControllerBase(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionUIControllerBase(); \
 	friend struct ::Z_Construct_UClass_UOrionUIControllerBase_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionUIControllerBase_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionUIControllerBase(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionUIControllerBase, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionUIControllerBase_NoRegister) \
+	DECLARE_CLASS2(UOrionUIControllerBase, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionUIControllerBase) \
 	DECLARE_SERIALIZER(UOrionUIControllerBase)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionUIControllerBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -50,14 +49,14 @@ public: \
 	NO_API virtual ~UOrionUIControllerBase();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_11_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_11_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_CALLBACK_WRAPPERS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_CALLBACK_WRAPPERS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -67,6 +66,6 @@ class UOrionUIControllerBase;
 // ********** End Class UOrionUIControllerBase *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Controllers_OrionUIControllerBase_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

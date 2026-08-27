@@ -19,6 +19,10 @@
 		{
 			"Name": "OrionUI",
 			"Enabled": true
+		},
+		{
+			"Name": "ModelViewViewModelPreview",
+			"Enabled": true
 		}
 	]
 }

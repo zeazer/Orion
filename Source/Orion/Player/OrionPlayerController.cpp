@@ -8,7 +8,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "OrionBlueprintFunctionLibrary.h"
-#include "OrionCharacter.h"
+#include "Orion/Character/OrionCharacter.h"
 
 AOrionPlayerController::AOrionPlayerController()
 {

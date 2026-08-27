@@ -12,27 +12,26 @@
 #define ORIONUI_OrionAnimUserWidget_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOrionAnimUserWidget *****************************************************
 struct Z_Construct_UClass_UOrionAnimUserWidget_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionAnimUserWidget_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionAnimUserWidget(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionAnimUserWidget(); \
 	friend struct ::Z_Construct_UClass_UOrionAnimUserWidget_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionAnimUserWidget_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionAnimUserWidget(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionAnimUserWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionAnimUserWidget_NoRegister) \
+	DECLARE_CLASS2(UOrionAnimUserWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionAnimUserWidget) \
 	DECLARE_SERIALIZER(UOrionAnimUserWidget) \
-	virtual UObject* _getUObject() const override { return const_cast<UOrionAnimUserWidget*>(this); }
+	[[deprecated("Do not call _getUObject(), use Cast.")]] virtual UObject* _getUObject() const override { return const_cast<UOrionAnimUserWidget*>(this); }
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionAnimUserWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -44,12 +43,12 @@ public: \
 	NO_API virtual ~UOrionAnimUserWidget();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_13_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_13_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -59,6 +58,6 @@ class UOrionAnimUserWidget;
 // ********** End Class UOrionAnimUserWidget *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionAnimUserWidget_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

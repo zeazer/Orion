@@ -8,69 +8,50 @@
 #include "UI/Interfaces/IUIOrionMasterCanvas.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_UOBJECT");
 void EmptyLinkFunctionForGeneratedCodeIUIOrionMasterCanvas() {}
 
 // ********** Begin Cross Module References ********************************************************
-COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
-ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas();
-ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister();
-UPackage* Z_Construct_UPackage__Script_OrionUI();
+COREUOBJECT_API UClass* Z_Construct_UClass_UInterface(ETypeConstructPhase);
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Same Module References *********************************************************
+UPackage* Z_Construct_UPackage__Script_OrionUI(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_IUIOrionMasterCanvas(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_IUIOrionMasterCanvas(ETypeConstructPhase);
+// ********** End Same Module References ***********************************************************
+#define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
+
 // ********** Begin Interface UUIOrionMasterCanvas *************************************************
-void UUIOrionMasterCanvas::StaticRegisterNativesUUIOrionMasterCanvas()
-{
-}
-FClassRegistrationInfo Z_Registration_Info_UClass_UUIOrionMasterCanvas;
-UClass* UUIOrionMasterCanvas::GetPrivateStaticClass()
-{
-	using TClass = UUIOrionMasterCanvas;
-	if (!Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton)
-	{
-		GetPrivateStaticClassBody(
-			TClass::StaticPackage(),
-			TEXT("UIOrionMasterCanvas"),
-			Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton,
-			StaticRegisterNativesUUIOrionMasterCanvas,
-			sizeof(TClass),
-			alignof(TClass),
-			TClass::StaticClassFlags,
-			TClass::StaticClassCastFlags(),
-			TClass::StaticConfigName(),
-			(UClass::ClassConstructorType)InternalConstructor<TClass>,
-			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
-			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
-			&TClass::Super::StaticClass,
-			&TClass::WithinClass::StaticClass
-		);
-	}
-	return Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton;
-}
-UClass* Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister()
-{
-	return UUIOrionMasterCanvas::GetPrivateStaticClass();
-}
-struct Z_Construct_UClass_UUIOrionMasterCanvas_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UClass_UUIOrionMasterCanvas_Statics
+struct UHT_STATICS
 {
 #if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UI/Interfaces/IUIOrionMasterCanvas.h" },
 	};
 #endif // WITH_METADATA
-	static UObject* (*const DependentSingletons[])();
+
+// ********** Begin Interface UUIOrionMasterCanvas constinit property declarations *****************
+// ********** End Interface UUIOrionMasterCanvas constinit property declarations *******************
+	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IUIOrionMasterCanvas>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
+}; // struct UHT_STATICS
+FTypeConstructFunc* UHT_STATICS::DependentSingletons[] = {
+	(FTypeConstructFunc*)Z_Construct_UClass_UInterface,
+	(FTypeConstructFunc*)Z_Construct_UPackage__Script_OrionUI,
 };
-UObject* (*const Z_Construct_UClass_UUIOrionMasterCanvas_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_UInterface,
-	(UObject* (*)())Z_Construct_UPackage__Script_OrionUI,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UUIOrionMasterCanvas_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UUIOrionMasterCanvas_Statics::ClassParams = {
-	&UUIOrionMasterCanvas::StaticClass,
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
+	&Z_Construct_UClass_UUIOrionMasterCanvas,
 	nullptr,
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
@@ -82,31 +63,66 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UUIOrionMasterCanvas_St
 	0,
 	0,
 	0x000840A1u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UUIOrionMasterCanvas_Statics::Class_MetaDataParams), Z_Construct_UClass_UUIOrionMasterCanvas_Statics::Class_MetaDataParams)
+	METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)
 };
-UClass* Z_Construct_UClass_UUIOrionMasterCanvas()
+FClassRegistrationInfo Z_Registration_Info_UClass_UUIOrionMasterCanvas;
+UClass* Z_Construct_UClass_UUIOrionMasterCanvas(ETypeConstructPhase Phase)
 {
+	if (Phase == ETypeConstructPhase::Inner)
+	{
+		using TClass = UUIOrionMasterCanvas;
+		if (!Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton)
+		{
+			GetPrivateStaticClassBody(
+				TClass::StaticPackage(),
+				TEXT("UIOrionMasterCanvas"),
+				Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton,
+				nullptr,
+				DataSizeOf<TClass>(),
+				alignof(TClass),
+				TClass::StaticClassFlags,
+				TClass::StaticClassCastFlags(),
+				TClass::StaticConfigName(),
+				(UClass::ClassConstructorType)InternalConstructor<TClass>,
+				(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+				UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+				&TClass::Super::StaticClass,
+				&TClass::WithinClass::StaticClass
+			);
+		}
+		return Z_Registration_Info_UClass_UUIOrionMasterCanvas.InnerSingleton;
+	}
 	if (!Z_Registration_Info_UClass_UUIOrionMasterCanvas.OuterSingleton)
 	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UUIOrionMasterCanvas.OuterSingleton, Z_Construct_UClass_UUIOrionMasterCanvas_Statics::ClassParams);
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UUIOrionMasterCanvas.OuterSingleton, UHT_STATICS::ClassParams);
 	}
 	return Z_Registration_Info_UClass_UUIOrionMasterCanvas.OuterSingleton;
 }
+#undef UHT_STATICS
 UUIOrionMasterCanvas::UUIOrionMasterCanvas(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UUIOrionMasterCanvas);
 // ********** End Interface UUIOrionMasterCanvas ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_Statics
+struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UUIOrionMasterCanvas, UUIOrionMasterCanvas::StaticClass, TEXT("UUIOrionMasterCanvas"), &Z_Registration_Info_UClass_UUIOrionMasterCanvas, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIOrionMasterCanvas), 1949216598U) },
+		{ Z_Construct_UClass_UUIOrionMasterCanvas, TEXT("UUIOrionMasterCanvas"), &Z_Registration_Info_UClass_UUIOrionMasterCanvas, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIOrionMasterCanvas), 920606589U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_1327094527(TEXT("/Script/OrionUI"),
-	Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_Statics::ClassInfo),
+}; // UHT_STATICS 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h__Script_OrionUI_39f7b018b54750673b6a151dbde5b71c0dad36f8{
+	TEXT("/Script/OrionUI"),
+	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+	nullptr, 0,
+};
+#undef UHT_STATICS
 // ********** End Registration *********************************************************************
+#undef UHT_STRUCT_BASE
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

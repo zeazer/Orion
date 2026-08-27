@@ -12,6 +12,7 @@
 #define ORIONUI_PoolAsyncAction_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -20,35 +21,26 @@ class UCommonUserWidget;
 class UObject;
 class UPoolAsyncAction;
 
-// ********** Begin Delegate FPoolOutputPin ********************************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_10_DELEGATE \
-ORIONUI_API void FPoolOutputPin_DelegateWrapper(const FMulticastScriptDelegate& PoolOutputPin, UCommonUserWidget* OrionUserWidget);
-
-
-// ********** End Delegate FPoolOutputPin **********************************************************
-
 // ********** Begin Class UPoolAsyncAction *********************************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execInternalCompleted); \
 	DECLARE_FUNCTION(execInternalTick); \
 	DECLARE_FUNCTION(execPoolAsyncNode);
 
 
 struct Z_Construct_UClass_UPoolAsyncAction_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UPoolAsyncAction_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UPoolAsyncAction(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUPoolAsyncAction(); \
 	friend struct ::Z_Construct_UClass_UPoolAsyncAction_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UPoolAsyncAction_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UPoolAsyncAction(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UPoolAsyncAction, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UPoolAsyncAction_NoRegister) \
+	DECLARE_CLASS2(UPoolAsyncAction, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UPoolAsyncAction) \
 	DECLARE_SERIALIZER(UPoolAsyncAction)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPoolAsyncAction(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -60,13 +52,13 @@ public: \
 	NO_API virtual ~UPoolAsyncAction();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_14_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_14_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -76,6 +68,6 @@ class UPoolAsyncAction;
 // ********** End Class UPoolAsyncAction ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Async_PoolAsyncAction_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -12,6 +12,7 @@
 #define ORIONUI_OrionBlueprintFunctionLibrary_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -23,15 +24,8 @@ class UOrionTooltipWidget;
 class UOrionUIControllerBase;
 class UUserWidget;
 
-// ********** Begin Delegate FOnUserWidgetCreated **************************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_12_DELEGATE \
-ORIONUI_API void FOnUserWidgetCreated_DelegateWrapper(const FScriptDelegate& OnUserWidgetCreated, UUserWidget* UserWidgetCreated);
-
-
-// ********** End Delegate FOnUserWidgetCreated ****************************************************
-
 // ********** Begin Class UOrionBlueprintFunctionLibrary *******************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execCreateToolTipWidget); \
 	DECLARE_FUNCTION(execBetterProjectWorldLocationToWidgetPosition); \
 	DECLARE_FUNCTION(execGetUIController); \
@@ -42,20 +36,18 @@ ORIONUI_API void FOnUserWidgetCreated_DelegateWrapper(const FScriptDelegate& OnU
 
 
 struct Z_Construct_UClass_UOrionBlueprintFunctionLibrary_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionBlueprintFunctionLibrary_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionBlueprintFunctionLibrary(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionBlueprintFunctionLibrary(); \
 	friend struct ::Z_Construct_UClass_UOrionBlueprintFunctionLibrary_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionBlueprintFunctionLibrary_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionBlueprintFunctionLibrary(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionBlueprintFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionBlueprintFunctionLibrary_NoRegister) \
+	DECLARE_CLASS2(UOrionBlueprintFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionBlueprintFunctionLibrary) \
 	DECLARE_SERIALIZER(UOrionBlueprintFunctionLibrary)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionBlueprintFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -67,13 +59,13 @@ public: \
 	NO_API virtual ~UOrionBlueprintFunctionLibrary();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_14_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_14_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -83,6 +75,6 @@ class UOrionBlueprintFunctionLibrary;
 // ********** End Class UOrionBlueprintFunctionLibrary *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_OrionBlueprintFunctionLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -12,12 +12,13 @@
 #define ORIONUI_OrionMenuWidget_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOrionMenuWidget *********************************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnHide_Implementation(); \
 	virtual void OnDisplay_Implementation(); \
 	DECLARE_FUNCTION(execOnHideComplete); \
@@ -26,22 +27,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execOnDisplay);
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_CALLBACK_WRAPPERS
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_UOrionMenuWidget_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionMenuWidget_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionMenuWidget(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionMenuWidget(); \
 	friend struct ::Z_Construct_UClass_UOrionMenuWidget_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionMenuWidget_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionMenuWidget(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionMenuWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionMenuWidget_NoRegister) \
+	DECLARE_CLASS2(UOrionMenuWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionMenuWidget) \
 	DECLARE_SERIALIZER(UOrionMenuWidget)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOrionMenuWidget(UOrionMenuWidget&&) = delete; \
 	UOrionMenuWidget(const UOrionMenuWidget&) = delete; \
@@ -51,14 +50,14 @@ public: \
 	NO_API virtual ~UOrionMenuWidget();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_14_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_14_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_CALLBACK_WRAPPERS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_CALLBACK_WRAPPERS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -68,6 +67,6 @@ class UOrionMenuWidget;
 // ********** End Class UOrionMenuWidget ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionMenuWidget_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

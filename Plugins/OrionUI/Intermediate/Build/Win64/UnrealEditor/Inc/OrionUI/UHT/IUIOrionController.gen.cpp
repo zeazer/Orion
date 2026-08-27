@@ -8,97 +8,82 @@
 #include "UI/Interfaces/IUIOrionController.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_UOBJECT");
 void EmptyLinkFunctionForGeneratedCodeIUIOrionController() {}
 
 // ********** Begin Cross Module References ********************************************************
-COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
-ORIONUI_API UClass* Z_Construct_UClass_UUIOrionController();
-ORIONUI_API UClass* Z_Construct_UClass_UUIOrionController_NoRegister();
-ORIONUI_API UFunction* Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature();
-UPackage* Z_Construct_UPackage__Script_OrionUI();
+COREUOBJECT_API UClass* Z_Construct_UClass_UInterface(ETypeConstructPhase);
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Same Module References *********************************************************
+UPackage* Z_Construct_UPackage__Script_OrionUI(ETypeConstructPhase);
+ORIONUI_API UFunction* Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UUIOrionController(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_IUIOrionController(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UUIOrionController(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_IUIOrionController(ETypeConstructPhase);
+// ********** End Same Module References ***********************************************************
+#define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
+
 // ********** Begin Delegate FOnPostPlayerTravel ***************************************************
-struct Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics
+struct UHT_STATICS
 {
 #if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UI/Interfaces/IUIOrionController.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnPostPlayerTravel constinit property declarations *******************
+// ********** End Delegate FOnPostPlayerTravel constinit property declarations *********************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OrionUI, nullptr, "OnPostPlayerTravel__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature()
+const UECodeGen_Private::FDelegateFunctionParams UHT_STATICS::FuncParams = { { (FTypeConstructFunc*)Z_Construct_UPackage__Script_OrionUI, nullptr, "OnPostPlayerTravel__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)},  };
+UFunction* Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature(ETypeConstructPhase Phase)
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OrionUI_OnPostPlayerTravel__DelegateSignature_Statics::FuncParams);
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, UHT_STATICS::FuncParams);
 	}
 	return ReturnFunction;
 }
-void FOnPostPlayerTravel_DelegateWrapper(const FScriptDelegate& OnPostPlayerTravel)
-{
-	OnPostPlayerTravel.ProcessDelegate<UObject>(NULL);
-}
+#undef UHT_STATICS
 // ********** End Delegate FOnPostPlayerTravel *****************************************************
 
 // ********** Begin Interface UUIOrionController ***************************************************
-void UUIOrionController::StaticRegisterNativesUUIOrionController()
-{
-}
-FClassRegistrationInfo Z_Registration_Info_UClass_UUIOrionController;
-UClass* UUIOrionController::GetPrivateStaticClass()
-{
-	using TClass = UUIOrionController;
-	if (!Z_Registration_Info_UClass_UUIOrionController.InnerSingleton)
-	{
-		GetPrivateStaticClassBody(
-			TClass::StaticPackage(),
-			TEXT("UIOrionController"),
-			Z_Registration_Info_UClass_UUIOrionController.InnerSingleton,
-			StaticRegisterNativesUUIOrionController,
-			sizeof(TClass),
-			alignof(TClass),
-			TClass::StaticClassFlags,
-			TClass::StaticClassCastFlags(),
-			TClass::StaticConfigName(),
-			(UClass::ClassConstructorType)InternalConstructor<TClass>,
-			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
-			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
-			&TClass::Super::StaticClass,
-			&TClass::WithinClass::StaticClass
-		);
-	}
-	return Z_Registration_Info_UClass_UUIOrionController.InnerSingleton;
-}
-UClass* Z_Construct_UClass_UUIOrionController_NoRegister()
-{
-	return UUIOrionController::GetPrivateStaticClass();
-}
-struct Z_Construct_UClass_UUIOrionController_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UClass_UUIOrionController_Statics
+struct UHT_STATICS
 {
 #if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "Public/UI/Interfaces/IUIOrionController.h" },
 	};
 #endif // WITH_METADATA
-	static UObject* (*const DependentSingletons[])();
+
+// ********** Begin Interface UUIOrionController constinit property declarations *******************
+// ********** End Interface UUIOrionController constinit property declarations *********************
+	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IUIOrionController>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
+}; // struct UHT_STATICS
+FTypeConstructFunc* UHT_STATICS::DependentSingletons[] = {
+	(FTypeConstructFunc*)Z_Construct_UClass_UInterface,
+	(FTypeConstructFunc*)Z_Construct_UPackage__Script_OrionUI,
 };
-UObject* (*const Z_Construct_UClass_UUIOrionController_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_UInterface,
-	(UObject* (*)())Z_Construct_UPackage__Script_OrionUI,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UUIOrionController_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UUIOrionController_Statics::ClassParams = {
-	&UUIOrionController::StaticClass,
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
+	&Z_Construct_UClass_UUIOrionController,
 	nullptr,
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
@@ -110,31 +95,66 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UUIOrionController_Stat
 	0,
 	0,
 	0x000840A1u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UUIOrionController_Statics::Class_MetaDataParams), Z_Construct_UClass_UUIOrionController_Statics::Class_MetaDataParams)
+	METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)
 };
-UClass* Z_Construct_UClass_UUIOrionController()
+FClassRegistrationInfo Z_Registration_Info_UClass_UUIOrionController;
+UClass* Z_Construct_UClass_UUIOrionController(ETypeConstructPhase Phase)
 {
+	if (Phase == ETypeConstructPhase::Inner)
+	{
+		using TClass = UUIOrionController;
+		if (!Z_Registration_Info_UClass_UUIOrionController.InnerSingleton)
+		{
+			GetPrivateStaticClassBody(
+				TClass::StaticPackage(),
+				TEXT("UIOrionController"),
+				Z_Registration_Info_UClass_UUIOrionController.InnerSingleton,
+				nullptr,
+				DataSizeOf<TClass>(),
+				alignof(TClass),
+				TClass::StaticClassFlags,
+				TClass::StaticClassCastFlags(),
+				TClass::StaticConfigName(),
+				(UClass::ClassConstructorType)InternalConstructor<TClass>,
+				(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+				UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+				&TClass::Super::StaticClass,
+				&TClass::WithinClass::StaticClass
+			);
+		}
+		return Z_Registration_Info_UClass_UUIOrionController.InnerSingleton;
+	}
 	if (!Z_Registration_Info_UClass_UUIOrionController.OuterSingleton)
 	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UUIOrionController.OuterSingleton, Z_Construct_UClass_UUIOrionController_Statics::ClassParams);
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UUIOrionController.OuterSingleton, UHT_STATICS::ClassParams);
 	}
 	return Z_Registration_Info_UClass_UUIOrionController.OuterSingleton;
 }
+#undef UHT_STATICS
 UUIOrionController::UUIOrionController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UUIOrionController);
 // ********** End Interface UUIOrionController *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_Statics
+struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UUIOrionController, UUIOrionController::StaticClass, TEXT("UUIOrionController"), &Z_Registration_Info_UClass_UUIOrionController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIOrionController), 3707389555U) },
+		{ Z_Construct_UClass_UUIOrionController, TEXT("UUIOrionController"), &Z_Registration_Info_UClass_UUIOrionController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIOrionController), 1484805291U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_3321545407(TEXT("/Script/OrionUI"),
-	Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_Statics::ClassInfo),
+}; // UHT_STATICS 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionController_h__Script_OrionUI_2b6bd60628ec6da3e2cdc586800c27f473382913{
+	TEXT("/Script/OrionUI"),
+	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+	nullptr, 0,
+};
+#undef UHT_STATICS
 // ********** End Registration *********************************************************************
+#undef UHT_STRUCT_BASE
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

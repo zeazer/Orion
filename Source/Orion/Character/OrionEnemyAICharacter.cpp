@@ -4,7 +4,7 @@
 #include "OrionEnemyAICharacter.h"
 
 #include "UI/Model/OrionUIModelComponent.h"
-#include "UIController/EnemyTrackerUIController.h"
+#include "Orion/UIController/EnemyTrackerUIController.h"
 
 AOrionEnemyAICharacter::AOrionEnemyAICharacter()
 {

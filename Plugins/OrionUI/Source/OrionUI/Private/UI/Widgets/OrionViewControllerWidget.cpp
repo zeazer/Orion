@@ -36,7 +36,7 @@ void UOrionViewControllerWidget::NativeOnInitialized()
 			bInitialized = true;
 			UpdateView(PlatformViewClasses[Settings->ViewType]);
 		}
-		Settings->OnSettingChanged().AddUObject(this, &UOrionViewControllerWidget::OnUpdateView);
+		//Settings->OnSettingChanged().AddUObject(this, &UOrionViewControllerWidget::OnUpdateView);
 	}
 
 	if (!UIControllerClass)

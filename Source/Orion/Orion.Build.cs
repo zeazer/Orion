@@ -24,7 +24,8 @@ public class Orion : ModuleRules
         PrivateDependencyModuleNames.AddRange(new string[] {
 	        "Slate",
 	        "SlateCore",
-	        "UMG",
+	        "UMG", 
+	        "ModelViewViewModel",
         });
     }
 }

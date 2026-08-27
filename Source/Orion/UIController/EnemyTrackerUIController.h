@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UI/Controllers/OrionUIControllerBase.h"
-#include "UIInterface/IUIEnemyTracker.h"
+#include "Orion/UIInterface/IUIEnemyTracker.h"
 #include "EnemyTrackerUIController.generated.h"
 
 /**

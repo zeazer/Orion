@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "OrionGameMode.h"
-#include "OrionPlayerController.h"
-#include "OrionCharacter.h"
+#include "Orion/Player/OrionPlayerController.h"
+#include "Orion/Character//OrionCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "GameFramework/HUD.h"
 

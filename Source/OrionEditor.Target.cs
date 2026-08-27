@@ -9,8 +9,8 @@ public class OrionEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		bOverrideBuildEnvironment = true;
-		DefaultBuildSettings = BuildSettingsVersion.V6;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
+		DefaultBuildSettings = BuildSettingsVersion.V7;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
 		ExtraModuleNames.Add("Orion");
 	}
 }

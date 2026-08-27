@@ -12,33 +12,33 @@
 #define ORIONUI_OrionViewControllerWidget_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
+#include "Templates/IsUEnumClass.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UWidget;
 
 // ********** Begin Class UOrionViewControllerWidget ***********************************************
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnLoadComplete); \
 	DECLARE_FUNCTION(execGetActiveView); \
 	DECLARE_FUNCTION(execForceUpdate);
 
 
 struct Z_Construct_UClass_UOrionViewControllerWidget_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionViewControllerWidget_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionViewControllerWidget(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionViewControllerWidget(); \
 	friend struct ::Z_Construct_UClass_UOrionViewControllerWidget_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionViewControllerWidget_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionViewControllerWidget(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionViewControllerWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionViewControllerWidget_NoRegister) \
+	DECLARE_CLASS2(UOrionViewControllerWidget, UOrionUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionViewControllerWidget) \
 	DECLARE_SERIALIZER(UOrionViewControllerWidget)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionViewControllerWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -50,13 +50,13 @@ public: \
 	NO_API virtual ~UOrionViewControllerWidget();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_20_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_20_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,7 +66,7 @@ class UOrionViewControllerWidget;
 // ********** End Class UOrionViewControllerWidget *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Widgets_OrionViewControllerWidget_h
 
 // ********** Begin Enum EViewDataMode *************************************************************
 #define FOREACH_ENUM_EVIEWDATAMODE(op) \
@@ -75,7 +75,7 @@ class UOrionViewControllerWidget;
 
 enum class EViewDataMode : uint8;
 template<> struct TIsUEnumClass<EViewDataMode> { enum { Value = true }; };
-template<> ORIONUI_NON_ATTRIBUTED_API UEnum* StaticEnum<EViewDataMode>();
+template<> UE_NODEBUG ORIONUI_NON_ATTRIBUTED_API UEnum* StaticEnum<EViewDataMode>();
 // ********** End Enum EViewDataMode ***************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

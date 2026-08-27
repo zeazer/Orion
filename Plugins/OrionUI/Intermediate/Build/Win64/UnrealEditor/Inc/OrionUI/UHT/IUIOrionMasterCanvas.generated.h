@@ -12,15 +12,16 @@
 #define ORIONUI_IUIOrionMasterCanvas_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Interface UUIOrionMasterCanvas *************************************************
 struct Z_Construct_UClass_UUIOrionMasterCanvas_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	ORIONUI_API UUIOrionMasterCanvas(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -32,39 +33,37 @@ ORIONUI_API UClass* Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister();
 	virtual ~UUIOrionMasterCanvas() = default;
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_UINTERFACE_BODY() \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_UINTERFACE_BODY() \
 private: \
-	static void StaticRegisterNativesUUIOrionMasterCanvas(); \
 	friend struct ::Z_Construct_UClass_UUIOrionMasterCanvas_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UUIOrionMasterCanvas(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UUIOrionMasterCanvas, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UUIOrionMasterCanvas_NoRegister) \
+	DECLARE_CLASS2(UUIOrionMasterCanvas, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UUIOrionMasterCanvas) \
 	DECLARE_SERIALIZER(UUIOrionMasterCanvas)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_UINTERFACE_BODY() \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_GENERATED_UINTERFACE_BODY() \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IUIOrionMasterCanvas() {} \
 public: \
 	typedef UUIOrionMasterCanvas UClassType; \
 	typedef IUIOrionMasterCanvas ThisClass; \
-	virtual UObject* _getUObject() const { return nullptr; }
+	[[deprecated("Do not call _getUObject(), use Cast.")]] virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_8_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_16_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_8_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h_11_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -74,6 +73,6 @@ class UUIOrionMasterCanvas;
 // ********** End Interface UUIOrionMasterCanvas ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Interfaces_IUIOrionMasterCanvas_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

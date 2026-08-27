@@ -12,27 +12,26 @@
 #define ORIONUI_OrionRichTextBlock_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOrionRichTextBlock ******************************************************
 struct Z_Construct_UClass_UOrionRichTextBlock_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionRichTextBlock_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionRichTextBlock(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionRichTextBlock(); \
 	friend struct ::Z_Construct_UClass_UOrionRichTextBlock_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionRichTextBlock_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionRichTextBlock(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionRichTextBlock, UCommonRichTextBlock, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionRichTextBlock_NoRegister) \
+	DECLARE_CLASS2(UOrionRichTextBlock, UCommonRichTextBlock, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionRichTextBlock) \
 	DECLARE_SERIALIZER(UOrionRichTextBlock) \
-	virtual UObject* _getUObject() const override { return const_cast<UOrionRichTextBlock*>(this); }
+	[[deprecated("Do not call _getUObject(), use Cast.")]] virtual UObject* _getUObject() const override { return const_cast<UOrionRichTextBlock*>(this); }
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionRichTextBlock(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -44,12 +43,12 @@ public: \
 	NO_API virtual ~UOrionRichTextBlock();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_13_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_13_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -59,6 +58,6 @@ class UOrionRichTextBlock;
 // ********** End Class UOrionRichTextBlock ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_OrionRichTextBlock_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

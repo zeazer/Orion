@@ -9,16 +9,20 @@
 #include "Styling/SlateTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_UOBJECT");
 void EmptyLinkFunctionForGeneratedCodeOrionTooltipDecorator() {}
 
 // ********** Begin Cross Module References ********************************************************
-ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipDecorator();
-ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipDecorator_NoRegister();
-SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FHyperlinkStyle();
-UMG_API UClass* Z_Construct_UClass_URichTextBlockDecorator();
-UPackage* Z_Construct_UPackage__Script_OrionUI();
+SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FHyperlinkStyle(ETypeConstructPhase);
+UMG_API UClass* Z_Construct_UClass_URichTextBlockDecorator(ETypeConstructPhase);
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Same Module References *********************************************************
+UPackage* Z_Construct_UPackage__Script_OrionUI(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipDecorator(ETypeConstructPhase);
+ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipDecorator(ETypeConstructPhase);
+// ********** End Same Module References ***********************************************************
+#define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
 
 // ********** Begin Class UOrionTooltipDecorator Function CascadeClicked ***************************
 static FName NAME_UOrionTooltipDecorator_CascadeClicked = FName(TEXT("CascadeClicked"));
@@ -34,25 +38,33 @@ void UOrionTooltipDecorator::CascadeClicked()
 		CascadeClicked_Implementation();
 	}
 }
-struct Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics
+struct UHT_STATICS
 {
 #if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UI/Decorator/OrionTooltipDecorator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CascadeClicked constinit property declarations ************************
+// ********** End Function CascadeClicked constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOrionTooltipDecorator, nullptr, "CascadeClicked", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked()
+const UECodeGen_Private::FFunctionParams UHT_STATICS::FuncParams = { { (FTypeConstructFunc*)Z_Construct_UClass_UOrionTooltipDecorator, nullptr, "CascadeClicked", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)},  };
+UFunction* Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked(ETypeConstructPhase Phase)
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, UHT_STATICS::FuncParams);
 	}
 	return ReturnFunction;
 }
+#undef UHT_STATICS
 DEFINE_FUNCTION(UOrionTooltipDecorator::execCascadeClicked)
 {
 	P_FINISH;
@@ -63,47 +75,14 @@ DEFINE_FUNCTION(UOrionTooltipDecorator::execCascadeClicked)
 // ********** End Class UOrionTooltipDecorator Function CascadeClicked *****************************
 
 // ********** Begin Class UOrionTooltipDecorator ***************************************************
-void UOrionTooltipDecorator::StaticRegisterNativesUOrionTooltipDecorator()
-{
-	UClass* Class = UOrionTooltipDecorator::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "CascadeClicked", &UOrionTooltipDecorator::execCascadeClicked },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
-FClassRegistrationInfo Z_Registration_Info_UClass_UOrionTooltipDecorator;
-UClass* UOrionTooltipDecorator::GetPrivateStaticClass()
-{
-	using TClass = UOrionTooltipDecorator;
-	if (!Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton)
-	{
-		GetPrivateStaticClassBody(
-			TClass::StaticPackage(),
-			TEXT("OrionTooltipDecorator"),
-			Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton,
-			StaticRegisterNativesUOrionTooltipDecorator,
-			sizeof(TClass),
-			alignof(TClass),
-			TClass::StaticClassFlags,
-			TClass::StaticClassCastFlags(),
-			TClass::StaticConfigName(),
-			(UClass::ClassConstructorType)InternalConstructor<TClass>,
-			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
-			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
-			&TClass::Super::StaticClass,
-			&TClass::WithinClass::StaticClass
-		);
-	}
-	return Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton;
-}
-UClass* Z_Construct_UClass_UOrionTooltipDecorator_NoRegister()
-{
-	return UOrionTooltipDecorator::GetPrivateStaticClass();
-}
-struct Z_Construct_UClass_UOrionTooltipDecorator_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UClass_UOrionTooltipDecorator_Statics
+struct UHT_STATICS
 {
 #if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "//////////////////////////////////////////////////////////////////////////\n" },
 #endif
@@ -116,66 +95,115 @@ struct Z_Construct_UClass_UOrionTooltipDecorator_Statics
 		{ "ModuleRelativePath", "Public/UI/Decorator/OrionTooltipDecorator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOrionTooltipDecorator constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_style;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static UObject* (*const DependentSingletons[])();
+// ********** End Class UOrionTooltipDecorator constinit property declarations *********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("CascadeClicked"), .Pointer = &UOrionTooltipDecorator::execCascadeClicked },
+	};
+	static FTypeConstructFunc* DependentSingletons[];
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked, "CascadeClicked" }, // 2700919685
+		{ &Z_Construct_UFunction_UOrionTooltipDecorator_CascadeClicked, "CascadeClicked" }, // c3b373034fa996bdd1b2adcb8c09b639dd144646
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOrionTooltipDecorator>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
+}; // struct UHT_STATICS
+
+// ********** Begin Class UOrionTooltipDecorator Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_style = { "style", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, STRUCT_OFFSET(UOrionTooltipDecorator, style), Z_Construct_UScriptStruct_FHyperlinkStyle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_style_MetaData), NewProp_style_MetaData) }; // b41a4ffe94f1832604c378ab4ed715b5ecf32f58
+const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_style,
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOrionTooltipDecorator_Statics::NewProp_style = { "style", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOrionTooltipDecorator, style), Z_Construct_UScriptStruct_FHyperlinkStyle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_style_MetaData), NewProp_style_MetaData) }; // 127222650
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOrionTooltipDecorator_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOrionTooltipDecorator_Statics::NewProp_style,
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
+// ********** End Class UOrionTooltipDecorator Property Definitions ********************************
+FTypeConstructFunc* UHT_STATICS::DependentSingletons[] = {
+	(FTypeConstructFunc*)Z_Construct_UClass_URichTextBlockDecorator,
+	(FTypeConstructFunc*)Z_Construct_UPackage__Script_OrionUI,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOrionTooltipDecorator_Statics::PropPointers) < 2048);
-UObject* (*const Z_Construct_UClass_UOrionTooltipDecorator_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_URichTextBlockDecorator,
-	(UObject* (*)())Z_Construct_UPackage__Script_OrionUI,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOrionTooltipDecorator_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UOrionTooltipDecorator_Statics::ClassParams = {
-	&UOrionTooltipDecorator::StaticClass,
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
+	&Z_Construct_UClass_UOrionTooltipDecorator,
 	nullptr,
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	Z_Construct_UClass_UOrionTooltipDecorator_Statics::PropPointers,
+	UHT_STATICS::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	UE_ARRAY_COUNT(Z_Construct_UClass_UOrionTooltipDecorator_Statics::PropPointers),
+	UE_ARRAY_COUNT(UHT_STATICS::PropPointers),
 	0,
 	0x001000A0u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOrionTooltipDecorator_Statics::Class_MetaDataParams), Z_Construct_UClass_UOrionTooltipDecorator_Statics::Class_MetaDataParams)
+	METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)
 };
-UClass* Z_Construct_UClass_UOrionTooltipDecorator()
+static void UOrionTooltipDecorator_StaticRegisterNativesUOrionTooltipDecorator()
 {
+	UClass* Class = UOrionTooltipDecorator::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, 		MakeConstArrayView(UHT_STATICS::Funcs));
+}
+FClassRegistrationInfo Z_Registration_Info_UClass_UOrionTooltipDecorator;
+UClass* Z_Construct_UClass_UOrionTooltipDecorator(ETypeConstructPhase Phase)
+{
+	if (Phase == ETypeConstructPhase::Inner)
+	{
+		using TClass = UOrionTooltipDecorator;
+		if (!Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton)
+		{
+			GetPrivateStaticClassBody(
+				TClass::StaticPackage(),
+				TEXT("OrionTooltipDecorator"),
+				Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton,
+				UOrionTooltipDecorator_StaticRegisterNativesUOrionTooltipDecorator,
+				DataSizeOf<TClass>(),
+				alignof(TClass),
+				TClass::StaticClassFlags,
+				TClass::StaticClassCastFlags(),
+				TClass::StaticConfigName(),
+				(UClass::ClassConstructorType)InternalConstructor<TClass>,
+				(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+				UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+				&TClass::Super::StaticClass,
+				&TClass::WithinClass::StaticClass
+			);
+		}
+		return Z_Registration_Info_UClass_UOrionTooltipDecorator.InnerSingleton;
+	}
 	if (!Z_Registration_Info_UClass_UOrionTooltipDecorator.OuterSingleton)
 	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOrionTooltipDecorator.OuterSingleton, Z_Construct_UClass_UOrionTooltipDecorator_Statics::ClassParams);
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOrionTooltipDecorator.OuterSingleton, UHT_STATICS::ClassParams);
 	}
 	return Z_Registration_Info_UClass_UOrionTooltipDecorator.OuterSingleton;
 }
+#undef UHT_STATICS
 DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOrionTooltipDecorator);
 UOrionTooltipDecorator::~UOrionTooltipDecorator() {}
 // ********** End Class UOrionTooltipDecorator *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_Statics
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_Statics
+struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOrionTooltipDecorator, UOrionTooltipDecorator::StaticClass, TEXT("UOrionTooltipDecorator"), &Z_Registration_Info_UClass_UOrionTooltipDecorator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOrionTooltipDecorator), 724678104U) },
+		{ Z_Construct_UClass_UOrionTooltipDecorator, TEXT("UOrionTooltipDecorator"), &Z_Registration_Info_UClass_UOrionTooltipDecorator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOrionTooltipDecorator), 2597295307U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_3712611701(TEXT("/Script/OrionUI"),
-	Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_Statics::ClassInfo),
+}; // UHT_STATICS 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Decorator_OrionTooltipDecorator_h__Script_OrionUI_c23856f2b0e046499ff126ae3a2803fae1645e95{
+	TEXT("/Script/OrionUI"),
+	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+	nullptr, 0,
+};
+#undef UHT_STATICS
 // ********** End Registration *********************************************************************
+#undef UHT_STRUCT_BASE
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

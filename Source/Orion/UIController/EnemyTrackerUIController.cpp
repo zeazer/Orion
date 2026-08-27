@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "UIController/EnemyTrackerUIController.h"
-#include "OrionEnemyAICharacter.h"
+#include "EnemyTrackerUIController.h"
+#include "Orion/Character/OrionEnemyAICharacter.h"
 #include "UI/Widgets/OrionViewControllerWidget.h"
 
 void UEnemyTrackerUIController::OnUpdate(UObject* Model)

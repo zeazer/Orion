@@ -2,11 +2,12 @@
 /errorReport:prompt
 /MACHINE:x64
 /SUBSYSTEM:WINDOWS
+/experimental:deterministic
 /DEF
 /NAME:"UnrealEditor-OrionUI.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:/Games/Orion/Intermediate/Build/Win64/x64/OrionEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/Module.OrionUI.cpp.obj"
-"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/Default.rc2.res"
-/OUT:"C:/Games/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/UnrealEditor-OrionUI.lib"
+"C:/Projects/GitHub/Orion/Intermediate/Build/Win64/x64/OrionEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Projects/GitHub/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/Module.OrionUI.cpp.obj"
+"C:/Projects/GitHub/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/OrionViewControllerWidget.cpp.obj"
+/OUT:"C:/Projects/GitHub/Orion/Plugins/OrionUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/OrionUI/UnrealEditor-OrionUI.lib"

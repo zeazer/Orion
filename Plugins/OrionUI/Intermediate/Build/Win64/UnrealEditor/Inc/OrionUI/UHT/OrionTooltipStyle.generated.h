@@ -12,26 +12,25 @@
 #define ORIONUI_OrionTooltipStyle_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOrionTooltipStyle *******************************************************
 struct Z_Construct_UClass_UOrionTooltipStyle_Statics;
-ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipStyle_NoRegister();
+ORIONUI_API UClass* Z_Construct_UClass_UOrionTooltipStyle(ETypeConstructPhase);
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUOrionTooltipStyle(); \
 	friend struct ::Z_Construct_UClass_UOrionTooltipStyle_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionTooltipStyle_NoRegister(); \
+	friend ORIONUI_API UClass* ::Z_Construct_UClass_UOrionTooltipStyle(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UOrionTooltipStyle, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionTooltipStyle_NoRegister) \
+	DECLARE_CLASS2(UOrionTooltipStyle, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OrionUI"), Z_Construct_UClass_UOrionTooltipStyle) \
 	DECLARE_SERIALIZER(UOrionTooltipStyle)
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOrionTooltipStyle(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +42,12 @@ public: \
 	NO_API virtual ~UOrionTooltipStyle();
 
 
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_7_PROLOG
-#define FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_GENERATED_BODY \
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_7_PROLOG
+#define FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_INCLASS_NO_PURE_DECLS \
-	FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_ENHANCED_CONSTRUCTORS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_INCLASS_NO_PURE_DECLS \
+	FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +57,6 @@ class UOrionTooltipStyle;
 // ********** End Class UOrionTooltipStyle *********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Games_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h
+#define CURRENT_FILE_ID FID_Projects_GitHub_Orion_Plugins_OrionUI_Source_OrionUI_Public_UI_Structs_OrionTooltipStyle_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
